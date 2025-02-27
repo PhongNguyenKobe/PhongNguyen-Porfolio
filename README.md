@@ -17,8 +17,8 @@ Thiết kế trang web cá nhân đáp ứng sử dụng HTML, CSS & JavaScript
 ---
 
 ### 💻 Demo
+![Screenshot 2025-02-27 222439](https://github.com/user-attachments/assets/ee25cb19-9dc0-43ee-9c63-e0ebe4d36d06)
 
-[![Portfolio]((https://github.com/user-attachments/assets/74200cd9-d3d0-4647-9a11-8c653381c3fa))]
  (https://phongnguyen1210.github.io/PhongNguyen-Porfolio/)
 
 ---
