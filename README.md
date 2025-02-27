@@ -6,7 +6,7 @@ Thiết kế trang web cá nhân đáp ứng sử dụng HTML, CSS & JavaScript
 
 ---
 
-### Các tính năng
+### ✨ Các tính năng
 - Chế độ sáng và tối
 - Hiệu ứng khi cuộn trang
 - Form liên hệ để gửi email
@@ -30,6 +30,6 @@ https://phongnguyen1210.github.io/PhongNguyen-Porfolio/
 
 ---
 
-📧 Liên hệ
+### 📧 Liên hệ
 Nếu bạn có bất kỳ câu hỏi hoặc góp ý nào, vui lòng liên hệ tại phongnguyenfe@gmail.com
 
