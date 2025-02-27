@@ -31,5 +31,5 @@ https://phongnguyen1210.github.io/PhongNguyen-Porfolio/
 ---
 
 📧 Liên hệ
-Nếu bạn có bất kỳ câu hỏi hoặc góp ý nào, vui lòng liên hệ tại phongnguyenfe@gmial.com
+Nếu bạn có bất kỳ câu hỏi hoặc góp ý nào, vui lòng liên hệ tại phongnguyenfe@gmail.com
 
