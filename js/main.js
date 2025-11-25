@@ -196,3 +196,57 @@ sr.reveal(`.home__info div`, {delay: 600, origin: 'bottom', interval: 100});
 sr.reveal(`.skills__content:nth-child(1), .contact__content:nth-child(1) `, {origin: 'left'});
 sr.reveal(`.skills__content:nth-child(2), .contact__content:nth-child(2) `, {origin: 'right'});
 sr.reveal(`.qualification__content, .services__card`, {interval: 100});
+
+/*=============== CERTIFICATE MODAL ===============*/
+// open certificate preview (image or pdf) in a modal
+const certLinks = document.querySelectorAll('.cert-link')
+if(certLinks.length){
+  // create modal element and append to body
+  const modal = document.createElement('div')
+  modal.id = 'cert-modal'
+  modal.className = 'cert-modal'
+  modal.innerHTML = `
+    <div class="cert-modal__overlay"></div>
+    <div class="cert-modal__content">
+      <button class="cert-modal__close" aria-label="Close">&times;</button>
+      <div class="cert-modal__body"></div>
+    </div>`
+  document.body.appendChild(modal)
+
+  const modalBody = modal.querySelector('.cert-modal__body')
+  const modalClose = modal.querySelector('.cert-modal__close')
+  const modalOverlay = modal.querySelector('.cert-modal__overlay')
+
+  const openModal = (type, src) => {
+    modalBody.innerHTML = ''
+    if(type === 'image'){
+      const img = document.createElement('img')
+      img.src = src
+      img.alt = 'Certificate'
+      modalBody.appendChild(img)
+    } else if(type === 'pdf'){
+      const iframe = document.createElement('iframe')
+      iframe.src = src
+      modalBody.appendChild(iframe)
+    }
+    modal.classList.add('show')
+  }
+
+  const closeModal = () => {
+    modal.classList.remove('show')
+    modalBody.innerHTML = ''
+  }
+
+  modalClose.addEventListener('click', closeModal)
+  modalOverlay.addEventListener('click', closeModal)
+
+  certLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      // if link has an href to external file but data-src provided, use data-src
+      e.preventDefault()
+      const type = link.dataset.type || 'image'
+      const src = link.dataset.src || link.getAttribute('href')
+      if(src) openModal(type, src)
+    })
+  })
+}

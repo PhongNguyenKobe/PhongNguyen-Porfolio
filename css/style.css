@@ -329,11 +329,16 @@ body.dark-theme {
   overflow: hidden;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center; /* center the image vertically */
 }
 
 .home__perfil img{
-  width: 150px;
+  /* Make the image cover the container so different aspect ratios fit nicely */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
 }
 
 .home__shape-wawes,
@@ -398,6 +403,16 @@ body.dark-theme {
 .home__info-number{
   font-size: var(--h1-font-size);
   font-weight: var(--font-semi-bold);
+}
+
+/* University text (typo'd class in HTML: home__infor-number) */
+.home__infor-number,
+.home__infor-number a{
+  color: #000; /* force black text for the university link */
+}
+
+.home__infor-number a:hover{
+  text-decoration: underline;
 }
 /*=============== SKILLS ===============*/
 .skills__container{
@@ -536,6 +551,51 @@ body.dark-theme {
   transform: rotate(15deg);
   opacity: .1;
 }
+
+/* ====== Certifications card styles ====== */
+.certs__list{
+  display:flex;
+  gap:1rem;
+  align-items:center;
+}
+.cert-card{
+  display:flex;
+  gap:1rem;
+  align-items:center;
+  background: var(--container-color);
+  padding: .75rem 1rem;
+  border-radius: .75rem;
+}
+.cert-card__img{
+  width:72px;
+  height:72px;
+  object-fit:contain;
+  border-radius: .5rem;
+  background: #fff;
+}
+.cert-card__title{
+  margin:0;
+  font-size: .95rem;
+}
+.cert-card__meta{
+  font-size: .8rem;
+  color: var(--text-color-light);
+}
+.cert-card__info a{
+  display:inline-block;
+  margin-top:.25rem;
+  font-size:.85rem;
+  color: var(--title-color);
+}
+
+/* ====== Modal for certificates ====== */
+.cert-modal{display:none;position:fixed;inset:0;z-index:9999;align-items:center;justify-content:center}
+.cert-modal.show{display:flex}
+.cert-modal__overlay{position:absolute;inset:0;background:rgba(0,0,0,.6)}
+.cert-modal__content{position:relative;max-width:95%;max-height:95%;background:var(--body-color);border-radius:.6rem;overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,.45);padding:.5rem}
+.cert-modal__close{position:absolute;right:.5rem;top:.25rem;border:none;background:transparent;font-size:1.5rem;cursor:pointer;color:var(--title-color)}
+.cert-modal__body img{max-width:100%;height:auto;display:block}
+.cert-modal__body iframe{width:100%;height:calc(95vh - 60px);border:0}
 /*=============== SERVICES ===============*/
 .services__container{
   row-gap: 2.5rem;
@@ -1178,14 +1238,21 @@ body.dark-theme {
     border-radius: 9.375rem; 
   }
 
+  /* Make perfil fill more of the blob and let the image scale responsively */
   .home__perfil{
-    width: 255px; 
-    height: 390px; 
+    /* use percentages so the child image scales with the blob */
+    width: 86%; 
+    height: 88%; 
     border-radius: 7.95rem;
   }
 
   .home__perfil img{
-    width: 225px; 
+    /* ensure the image always covers the perfil area and stays responsive */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
   }
   .home__shape-wawes{
     width: 100px;
