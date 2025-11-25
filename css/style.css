@@ -588,6 +588,36 @@ body.dark-theme {
   color: var(--title-color);
 }
 
+/* ===== Dark theme exceptions: keep certain texts and icons bright ===== */
+/* Restore readable text for the info numbers and links in dark mode */
+.dark-theme .home__infor-number,
+.dark-theme .home__infor-number a,
+.dark-theme .home__info-description,
+.dark-theme .home__info-number{
+  color: var(--title-color) !important;
+}
+
+/* Ensure skill / cert icons stay visible in dark mode */
+.dark-theme .cert-card__img,
+.dark-theme .projects__img,
+.dark-theme .testimonial__img,
+.dark-theme .qualification__img{
+  filter: none !important;
+  opacity: 1 !important;
+  mix-blend-mode: normal !important;
+}
+
+/* Brighten specific technology icons in dark mode so they remain visible */
+.dark-theme .skill-icon--react,
+.dark-theme .skill-icon--nextjs,
+.dark-theme .skill-icon--github{
+  filter: invert(1) brightness(2) contrast(1.1) !important;
+}
+/* Brighten RESTful API icon as well */
+.dark-theme .skill-icon--restapi{
+  filter: invert(1) brightness(2) contrast(1.1) !important;
+}
+
 /* ====== Modal for certificates ====== */
 .cert-modal{display:none;position:fixed;inset:0;z-index:9999;align-items:center;justify-content:center}
 .cert-modal.show{display:flex}
