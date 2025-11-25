@@ -193,8 +193,11 @@ const sr = ScrollReveal({
 
 sr.reveal(`.home__data, .projects__container, .testimonial__container, .footer__container `);
 sr.reveal(`.home__info div`, {delay: 600, origin: 'bottom', interval: 100});
-sr.reveal(`.skills__content:nth-child(1), .contact__content:nth-child(1) `, {origin: 'left'});
-sr.reveal(`.skills__content:nth-child(2), .contact__content:nth-child(2) `, {origin: 'right'});
+// Reveal all skill blocks (previously only first two were targeted)
+sr.reveal('.skills__content', { interval: 100 });
+// Keep contact reveal split left/right
+sr.reveal('.contact__content:nth-child(1)', { origin: 'left' });
+sr.reveal('.contact__content:nth-child(2)', { origin: 'right' });
 sr.reveal(`.qualification__content, .services__card`, {interval: 100});
 
 /*=============== CERTIFICATE MODAL ===============*/
