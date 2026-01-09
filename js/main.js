@@ -249,6 +249,11 @@ if(certLinks.length){
       e.preventDefault()
       const type = link.dataset.type || 'image'
       const src = link.dataset.src || link.getAttribute('href')
+      const openInNewTab = link.dataset.open === 'tab'
+      if(openInNewTab && src){
+        window.open(src, '_blank')
+        return
+      }
       if(src) openModal(type, src)
     })
   })

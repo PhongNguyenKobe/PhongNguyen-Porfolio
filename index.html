@@ -1,809 +1,1083 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="img porfolio\favicon.png" type="image/x-icon">
-
-        <!--=============== REMIXICONS ===============-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-        
-        <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="css\swiper-bundle.min.css">
-
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="css\style.css">
-
-        <title>Phong Nguyen Porfolio</title>
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">
-                    Phong Nguyen
-                </a>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list grid">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">
-                                <i class="ri-home-3-line"></i> Home
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#skills" class="nav__link">
-                                <i class="ri-trophy-line"></i> Skills
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#qualification" class="nav__link">
-                                <i class="ri-book-3-line"></i> Qualification
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#services" class="nav__link">
-                                <i class="ri-briefcase-5-line"></i> Services
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#projects" class="nav__link"> 
-                                <i class="ri-image-line"></i> Projects
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">
-                                <i class="ri-chat-3-line"></i> Contact
-                            </a>
-                        </li>
-                    </ul>
-                    <!--Close button-->
-                    <div class="nav__close" id="nav-close">
-                        <i class="ri-close-fill"></i>
-                    </div>
-                </div>
-                
-                <div class="nav__buttons">
-                    <!--Theme change button-->
-                    <i class="ri-moon-clear-line change-theme" id="theme-button"></i> 
-
-                    <!--Toggle button-->
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class="ri-menu-4-line"></i>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                <div class="home__container container grid section__border">
-                    <div class="home__data grid">
-                        <h1 class="home__title">
-                            Hi, I'm Phong <br>
-                            Web Developer <br>
-                            Living In Việt Nam
-                        </h1>
-
-                        <div class="home__blob grid">
-                            <div class="home__perfil">
-                                <img src="img porfolio\Anh_profile_5.png" alt="home perfil">
-                            </div>
-
-                            <img src="img porfolio\shape-wawes.svg" alt="" class="home__shape-wawes"> 
-                            <img src="img porfolio\shape-circle.svg" alt="" class="home__shape-circle">
-                        </div>
-                        
-                        <ul class="home__social">
-                            <a href="https://github.com/PhongNguyenKobe" target="_blank" class="home__social-link">
-                                <i class="ri-github-fill"></i>
-                            </a>
-
-                            <a href="https://www.linkedin.com/in/phongnguyendev/" target="_blank" class="home__social-link">
-                                <i class="ri-linkedin-box-line"></i>
-                            </a>
-
-                            <a href="https://www.facebook.com/gnohpgn/" target="_blank" class="home__social-link">
-                                <i class="ri-facebook-circle-line"></i>
-                            </a>
-                        </ul>
-                    </div>
-
-                    <!--==================== HOME INFO 1 ====================-->
-                    <div class="home__info">
-                        <div>
-                            <h3 class="home__info-title">
-                                BIOGRAPHY
-                            </h3>
-
-                            <p class="home__info-description">
-                                Hi, I'm Phong, a 4th-year Software Engineering student. Passionate about Full-Stack Development, from intuitive web interfaces to solid backend systems.
-                            </p>
-                        </div>
-                        <div>
-                            <h3 class="home__info-title">
-                                CONTACT
-                            </h3>
-
-                            <p class="home__info-description">
-                                Hồ Chí Minh City, Việt Nam <br>
-                                phongnguyenfe@gmail.com <br>
-                                +84 388 562 250
-                            </p>
-                        </div> 
-
-                        <div>
-                            <h3 class="home__info-title">
-                                SERVICES
-                            </h3>
-
-                            <p class="home__info-description">
-                                Website Design <br>
-                                UI/UX Design
-                            </p>
-                        </div>
-                    </div>
-
-                    <!--==================== HOME INFO 2 ====================-->
-                    <div class="home__info">
-                        <div>
-                            <h3 class="home__info-title">
-                                YEARS OF EXPERIENCE
-                            </h3>
-
-                            <p class="home__infor-number">
-                                01+
-                            </p>
-                        </div>
-
-                        <div>
-                            <h3 class="home__info-title">
-                                COMPLETED PROJECT
-                            </h3>
-
-                            <p class="home__infor-number">
-                                07+
-                            </p>
-                        </div>
-
-                        <div>
-                            <h3 class="home__info-title">
-                                UNIVERSITY
-                            </h3>
-
-                            <p class="home__infor-number">
-                                <a href="https://niie.edu.vn/" target="_blank" rel="noopener noreferrer">
-                                    Nguyễn Tất Thành University – NTT Institute of International Education (NIIE)
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
-                <h2 class="section__title">Skills</h2>
-                <span class="section__subtitle">Language, technology & skills</span>
-
-                <div class="skills__container container grid section__border">
-                    <!-- Ngôn ngữ & Công nghệ -->
-                    <div class="skills__content">
-                        <h3 class="skills__title">
-                            <i class="ri-code-line"></i> Front-end
-                        </h3>
-
-                        <div class="skills__info">
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="img porfolio\icons8-html-logo.svg" alt="HTML">
-                                </div>
-                                <h3 class="skill__name">HTML</h3>
-                                <span class="skills__subtitle">Intermediate</span>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="img porfolio\icons8-css-logo.svg" alt="CSS">
-                                </div>
-                                <h3 class="skill__name">CSS</h3>
-                                <span class="skills__subtitle">Intermediate</span>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="img porfolio\icons8-javascript.svg" alt="JavaScript">
-                                </div>
-                                <h3 class="skill__name">JavaScript</h3>
-                                <span class="skills__subtitle">Intermediate</span>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <!-- no icon available for TypeScript; reuse JS icon or leave blank -->
-                                    <img src="img porfolio\icons8-typescript.svg" alt="TypeScript">
-                                </div>
-                                <h3 class="skill__name">TypeScript</h3>
-                                <span class="skills__subtitle">Intermediate</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Thư viện & Framework -->
-                    <div class="skills__content">
-                        <h3 class="skills__title">
-                            <i class="ri-stack-line"></i> Libraries & frameworks
-                        </h3>
-
-                        <div class="skills__info">
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="img porfolio\icons8-react.svg" alt="ReactJS" class="skill-icon skill-icon--react">
-                                </div>
-                                <h3 class="skill__name">ReactJS</h3>
-                                <span class="skills__subtitle">Intermediate</span>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="img porfolio\icons8-nextjs.svg" alt="Nextjs" class="skill-icon skill-icon--nextjs">
-                                </div>
-                                <h3 class="skill__name">Next.js</h3>
-                                <span class="skills__subtitle">Basic</span>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="img porfolio\icons8-tailwind-css.svg" alt="Tailwind CSS">
-                                </div>
-                                <h3 class="skill__name">Tailwind CSS</h3>
-                                <span class="skills__subtitle">Basic</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- back end -->
-                    <div class="skills__content">
-                        <h3 class="skills__title">
-                            <i class="ri-settings-3-line"></i> Back-end
-                        </h3>
-
-                        <div class="skills__info">
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="img porfolio\icons8-c.svg" alt="C#">
-                                </div>
-                                <h3 class="skill__name">C#</h3>
-                                <span class="skills__subtitle">Basic</span>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="img porfolio\icons8-.net-framework.svg" alt="ASP.NET Core">
-                                </div>
-                                <h3 class="skill__name">ASP.NET Core</h3>
-                                <span class="skills__subtitle">Basic</span>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="img porfolio\rest-api-icon.svg" alt="RESTful API" class="skill-icon skill-icon--restapi">
-                                </div>
-                                <h3 class="skill__name">RESTful API</h3>
-                                <span class="skills__subtitle">Basic</span>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="img porfolio\icons8-sql-server.svg" alt="SQL Server">
-                                </div>
-                                <h3 class="skill__name">SQL Server</h3>
-                                <span class="skills__subtitle">Basic</span>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="img porfolio\icons8-nodejs.svg" alt="Nodejs">
-                                </div>
-                                <h3 class="skill__name">Node.js</h3>
-                                <span class="skills__subtitle">Basic</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Quản lý mã nguồn -->
-                    <div class="skills__content">
-                        <h3 class="skills__title">
-                            <i class="ri-git-merge-line"></i> Version Control
-                        </h3>
-
-                        <div class="skills__info">
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="img porfolio\icons8-git.svg" alt="Git">
-                                </div>
-                                <h3 class="skill__name">Git</h3>
-                                <span class="skills__subtitle">Intermediate</span>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="img porfolio\icons8-github.svg" alt="GitHub" class="skill-icon skill-icon--github">
-                                </div>
-                                <h3 class="skill__name">GitHub</h3>
-                                <span class="skills__subtitle">Intermediate</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--==================== QUALIFICATION ====================-->
-            <section class="qualification section" id="qualification">
-                <h2 class="section__title">Qualification</h2>
-                <span class="section__subtitle">Experience & education</span>
-
-                <div class="qualification__container container grid section__border">
-                    <!--==================== QUALIFICATION 1 ====================-->
-                    <div class="qualification__content">
-                        <h3 class="qualification__title">
-                            <i class="ri-pencil-line"></i> Education
-                        </h3>
-
-                        <div class="qualification__info">
-                            <div>
-                                <h3 class="qualification__name">
-                                    Engineer’s Degree in Information Technology,<br> Software Engineering
-                                </h3>
-                                <span class="qualification__place">Nguyễn Tất Thành University – NTT Institute of International Education</span>
-                                <span class="qualification__year"> 2022 - 2026 </span>
-                            </div>
-                        </div>
-                    </div>
-                    <!--==================== QUALIFICATION 2 ====================-->
-                    <div class="qualification__content">
-                        <h3 class="qualification__title">
-                            <i class="ri-building-line"></i> Work
-                        </h3>
-
-                        <div class="qualification__info">
-                            <div>
-                                <h3 class="qualification__name">
-                                    Frontend Developer
-                                </h3>
-                                <span class="qualification__place"> District 7 - Hồ Chí Minh City </span>
-                                <span class="qualification__year"> 2022-2026 </span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__name">
-                                    Software Engineer
-                                </h3>
-                                <span class="qualification__place"> District 7 - Hồ Chí Minh City</span>
-                                <span class="qualification__year"> 2022-2026 </span>
-                            </div>
-                        </div>
-                    </div> 
-                    <!--==================== CERTIFICATIONS ====================-->
-                    <div class="qualification__content">
-                        <h3 class="qualification__title">
-                            <i class="ri-award-line"></i> Certifications
-                        </h3>
-
-                        <div class="qualification__info">
-                            <div>
-                                <div class="certs__list">
-                                    <div class="cert-card">
-                                        <a href="#" class="cert-link" data-type="image" data-src="img porfolio/mos-cer.png" title="MOS WEP">
-                                            <img src="img porfolio/mos-cer.png" alt="MOS WEP badge" class="cert-card__img">
-                                        </a>
-
-                                        <div class="cert-card__info">
-                                            <h3 class="cert-card__title">Microsoft Office Specialist Associate Office 2019</h3>
-                                            <span class="cert-card__meta">Microsoft — 2025</span>
-                                                    <!-- PDF view link removed as requested -->
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>             
-                <img src="img porfolio\shape-circle.svg" alt="qualification image" class="qualification__img">
-            </section>
-
-            <!--==================== SERVICES ====================-->
-            <section class="services section" id="services">
-                <h2 class="section__title">Services</h2>
-                <span class="section__subtitle">What i offer</span>
-
-                <div class="services__container container grid section__border">
-                    <div class="services__card">
-                        <i class="ri-layout-4-line"></i>
-
-                        <h2 class="services__title">
-                            UI/UX <br>
-                            Designer
-                        </h2>
-
-                        <p class="services__description">
-                            Service that provides the best quality and 
-                            according to customer requirements, with professional
-                            work and customer support
-                        </p>
-
-                        <div class="services__border"></div>
-                    </div>
-
-                    <div class="services__card">
-                        <i class="ri-code-fill"></i>
-
-                        <h2 class="services__title">
-                            Website <br>
-                            Design
-                        </h2>
-
-                        <p class="services__description">
-                            Service that provides the best quality and 
-                            according to customer requirements, with professional
-                            work and customer support
-                        </p>
-
-                        <div class="services__border"></div>
-                    </div> 
-
-                    <div class="services__card">
-                        <i class="ri-quill-pen-line"></i>
-
-                        <h2 class="services__title">
-                            Digital <br>
-                            Animator
-                        </h2>
-
-                        <p class="services__description">
-                            Service that provides the best quality and 
-                            according to customer requirements, with professional
-                            work and customer support
-                        </p>
-
-                        <div class="services__border"></div>
-                    </div>
-                </div>
-              
-            </section>
-
-            <!--==================== PROJECTS ====================-->
-            <section class="projects section" id="projects">
-                <h2 class="section__title">Projects</h2>
-                <span class="section__subtitle">Most recent work</span>
-
-                <div class="container section__border">
-                    <div class="projects__container swiper">
-                        <div class="swiper-wrapper">
-                            <!--==================== PROJECTS 1 ====================-->
-                            <div class="projects__content swiper-slide">
-                                <img src="img porfolio\project_1.png" alt="projects image" class="projects__img">
-
-                                <div>
-                                    <span class="projects__subtitle">Landing Page Design</span>
-                                    <h1 class="projects__title">Việt Nam Travel</h1>
-
-                                    <a href="https://dulichvietnam-phongnguyen-vn.netlify.app" class="projects__button">
-                                        View demo <i class="ri-arrow-right-circle-line"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <!--==================== PROJECTS 2 ====================-->
-                            <div class="projects__content swiper-slide">
-                                <img src="img porfolio\project_2.png" alt="projects image" class="projects__img">
-
-                                <div>
-                                    <span class="projects__subtitle">Landing Page Design</span>
-                                    <h1 class="projects__title">Doritos</h1>
-
-                                    <a href="https://phongnguyenkobe.github.io/Doritos-Chips-PhongNguyen/" class="projects__button">
-                                        View demo <i class="ri-arrow-right-circle-line"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <!--==================== PROJECTS 3 ====================-->
-                            <div class="projects__content swiper-slide">
-                                <img src="img porfolio\project_3.png" alt="projects image" class="projects__img">
-
-                                <div>
-                                    <span class="projects__subtitle">Demo Website Front-end</span>
-                                    <h1 class="projects__title">PNH Education</h1>
-
-                                    <a href="https://pnh-education-phongnguyen.netlify.app/" class="projects__button">
-                                        View demo <i class="ri-arrow-right-circle-line"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <!--==================== PROJECTS 4 ====================-->
-                            <div class="projects__content swiper-slide">
-                                <img src="img porfolio\car.png" alt="projects image" class="projects__img">
-
-                                <div>
-                                    <span class="projects__subtitle">Landing Page Design</span>
-                                    <h1 class="projects__title">PhongCar</h1>
-
-                                    <a href="https://responsive-car-website-phong-car.vercel.app/" class="projects__button">
-                                        View demo <i class="ri-arrow-right-circle-line"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <!--==================== PROJECTS 5 ====================-->
-                            <div class="projects__content swiper-slide">
-                                <img src="img porfolio\movie.png" alt="projects image" class="projects__img">
-
-                                <div>
-                                    <span class="projects__subtitle">Website</span>
-                                    <h1 class="projects__title">Movie Dashboard</h1>
-
-                                    <a href="https://phongnguyen-movie.netlify.app/" class="projects__button">
-                                        View demo <i class="ri-arrow-right-circle-line"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <!--==================== PROJECTS 6 ====================-->
-                            <div class="projects__content swiper-slide">
-                                <img src="img porfolio\phongship.png" alt="projects image" class="projects__img">
-
-                                <div>
-                                    <span class="projects__subtitle">Landing Page Design</span>
-                                    <h1 class="projects__title">PhongShip-Animation</h1>
-
-                                    <a href="https://phongnguyenkobe.github.io/pirate-animation/" class="projects__button">
-                                        View demo <i class="ri-arrow-right-circle-line"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <!--==================== PROJECTS 6 ====================-->
-                            <div class="projects__content swiper-slide">
-                                <img src="img porfolio\project_7.png" alt="projects image" class="projects__img">
-
-                                <div>
-                                    <span class="projects__subtitle">Website E-commerce</span>
-                                    <h1 class="projects__title">PhongNguyen Puppy</h1>
-
-                                    <a href="https://github.com/PhongNguyenKobe/PhongNguyenPuppyShop-MVC" class="projects__button">
-                                        View demo <i class="ri-arrow-right-circle-line"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                        <!-- Swiper arrows -->
-                        <div class="swiper-button-next">
-                            <i class="ri-arrow-right-s-fill"></i>
-                        </div>
-                        <div class="swiper-button-prev">
-                            <i class="ri-arrow-left-s-fill"></i>
-                        </div>
-
-                        <!-- Swiper pagination -->                        
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-            </section>
-
-            <!--==================== TESTIMONIAL ====================-->
-            <section class="testimonial section">
-                <h2 class="section__title">Testimonial</h2>
-                <span class="section__subtitle">My client and partner saying</span>
-
-                <div class="container section__border">
-                    <div class="testimonial__container swiper">
-                        <div class="swiper-wrapper">                           
-                            <!--==================== TESTIMONIAL 1 ====================-->
-                            <div class="testimonial__content swiper-slide">
-                                <p class="testimonial__description">
-                                    "Working with Phong is to give a good impression,
-                                    I carry out my project at a good cost,
-                                    with excellent quality and attention.
-                                    Great service and recommended."
-                                </p>
-
-                                <div>
-                                    <h3 class="testimonial__name">Văn Khánh</h3>
-                                    <span class="testimonial__subtitle">Partner</span>
-                                </div>
-                            </div>
-
-                            <!--==================== TESTIMONIAL 2 ====================-->
-                            <div class="testimonial__content swiper-slide">
-                                <p class="testimonial__description">
-                                    "Phong helped me implement the project with excellent quality. 
-                                    His meticulous attention and excellent service made me very satisfied. 
-                                    I would definitely recommend him to everyone."
-                                </p>
-
-                                <div>
-                                    <h3 class="testimonial__name">Anh Tuấn</h3>
-                                    <span class="testimonial__subtitle">Partner</span>
-                                </div>
-                            </div>
-
-                            <!--==================== TESTIMONIAL 3 ====================-->
-                            <div class="testimonial__content swiper-slide">
-                                <p class="testimonial__description">
-                                    "Phong helped me complete the project effectively. 
-                                    The quality of his service and meticulous attention is admirable.
-                                    Well worth recommending!"
-                                </p>
-
-                                <div>
-                                    <h3 class="testimonial__name">Butler</h3>
-                                    <span class="testimonial__subtitle">Client</span>
-                                </div>
-                            </div>                           
-                        </div>
-
-                        <!-- Swiper arrows -->
-                        <div class="swiper-button-next">
-                            <i class="ri-arrow-right-s-fill"></i>
-                        </div>
-                        <div class="swiper-button-prev">
-                            <i class="ri-arrow-left-s-fill"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <img src="img porfolio\shape-wawes.svg" alt="testimonial image" class="testimonial__img">
-            </section>
-
-            <!--==================== CONTACT ====================-->
-            <section class="contact section" id="contact">
-                <h2 class="section__title">Contact Me</h2>
-                <span class="section__subtitle">Get in touch</span>
-
-                <div class="contact__container container grid section__border">
-                    <div class="contact__content">
-                        <h3 class="contact__title">
-                            <i class="ri-chat-3-line"></i>Talk to me
-                        </h3>
-
-                        <div class="contact__info">
-                            <div class="contact__data">
-                                <span class="contact__data-title">Email</span>
-                                <span class="contact__data-info">phongnguyenfe@gmail.com</span>
-
-                            </div>
-
-                            <div class="contact__data">
-                                <span class="contact__data-title">My CV</span>
-                                <span class="contact__data-info">Phong Nguyen Curriculum Vitae </span>
-
-                                <a href="img porfolio\Nguyễn Đặng Thanh Phong - Kĩ sư phần mềm_CV_topdev.vn.pdf" download="" target="_blank" class="contact__button">
-                                    Download <i class="ri-arrow-down-circle-line"></i>
-                                </a>
-                            </div>
-
-                            <div class="contact__data">
-                                <span class="contact__data-title">Zalo</span>
-                                <span class="contact__data-info">+84 388562250</span>
-
-                                <a href="https://id.zalo.me/account?continue=https%3A%2F%2Fchat.zalo.me%2F" target="_blank" class="contact__button">
-                                    Write me <i class="ri-arrow-right-fill"></i>
-                                </a>
-                            </div>
-
-                            <div class="contact__data">
-                                <span class="contact__data-title">Facebook</span>
-                                <span class="contact__data-info">Phong Nguyenn </span>
-
-                                <a href="https://www.facebook.com/gnohpgn/" target="_blank" class="contact__button">
-                                    Write me <i class="ri-arrow-right-fill"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="contact__content">
-                        <h3 class="contact__title">
-                            <i class="ri-send-plane-line"></i>Write me your project
-                        </h3>
-
-                        <form action="" class="contact__form" id="contact-form">
-                            <div class="contact__form-div">
-                                <label class="contact__form-tag">Names</label>
-                                <input type="text" name="user_name" required placeholder="Write your names" class="contact__form-input" id="contact-name">
-                            </div>
-
-                            <div class="contact__form-div">
-                                <label class="contact__form-tag">Mail</label>
-                                <input type="email" name="user_email" required placeholder="Write your mail" class="contact__form-input" id="contact-email">
-                            </div>
-
-                            <div class="contact__form-div contact__form-area">
-                                <label class="contact__form-tag">Project</label>
-                                <textarea name="user_project" placeholder="Write your project" id="contact-project" class="contact__form-input"></textarea>
-                            </div>
-
-                            <p class="contact__message" id="contact-message"></p>
-
-                            <button type="submit" class="contact__button">
-                                Submit <i class="ri-arrow-right-up-fill"></i>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <!--==================== FOOTER ====================-->
-        <footer class="footer">
-            <div class="footer__container container">
-                <h1 class="footer__title">Phong</h1>
-                <p>Web Developer</p>
-
-                <ul class="footer__list">
-                    <li>
-                        <a href="#home" class="footer__link">Home</a>
-                    </li>
-
-                    <li>
-                        <a href="#skills" class="footer__link">Skills</a>
-                    </li>
-
-                    <li>
-                        <a href="#projects" class="footer__link">Projects</a>
-                    </li>
-                </ul>
-
-                <ul class="footer__social">
-                    <a href="https://github.com/PhongNguyen1210" target="_blank" class="footer__social-link">
-                        <i class="ri-github-fill"></i>
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/phong-thanh-787913316/" target="_blank" class="footer__social-link">
-                        <i class="ri-linkedin-box-line"></i>
-                    </a>
-
-                    <a href="https://www.facebook.com/gnohpgn/" target="_blank" class="footer__social-link">
-                        <i class="ri-facebook-circle-line"></i>
-                    </a>
-                </ul>
-
-                <span class="footer__copy">
-                    &#169; Copyright PhongNguyen. All rights reserved
-                </span>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="img porfolio\favicon.png"
+      type="image/x-icon"
+    />
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="css\swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="css\style.css" />
+
+    <title>Phong Nguyen Porfolio</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo"> Phong Nguyen </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="ri-home-3-line"></i> Home
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="ri-trophy-line"></i> Skills
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#qualification" class="nav__link">
+                <i class="ri-book-3-line"></i> Qualification
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#services" class="nav__link">
+                <i class="ri-briefcase-5-line"></i> Services
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">
+                <i class="ri-image-line"></i> Projects
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="ri-chat-3-line"></i> Contact
+              </a>
+            </li>
+          </ul>
+          <!--Close button-->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-fill"></i>
+          </div>
+        </div>
+
+        <div class="nav__buttons">
+          <!--Theme change button-->
+          <i class="ri-moon-clear-line change-theme" id="theme-button"></i>
+
+          <!--Toggle button-->
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-4-line"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid section__border">
+          <div class="home__data grid">
+            <h1 class="home__title">
+              Hi, I'm Phong <br />
+              Web Developer <br />
+              Living In Việt Nam
+            </h1>
+
+            <div class="home__blob grid">
+              <div class="home__perfil">
+                <img src="img porfolio\Anh_profile_5.png" alt="home perfil" />
+              </div>
+
+              <img
+                src="img porfolio\shape-wawes.svg"
+                alt=""
+                class="home__shape-wawes"
+              />
+              <img
+                src="img porfolio\shape-circle.svg"
+                alt=""
+                class="home__shape-circle"
+              />
             </div>
-        </footer>
 
+            <ul class="home__social">
+              <a
+                href="https://github.com/PhongNguyenKobe"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-github-fill"></i>
+              </a>
 
-        <!--========== SCROLL UP ==========-->
-        <a href="#" class="scrollup" id="scroll-up">
-            <i class="ri-arrow-up-line"></i>
-        </a>
+              <a
+                href="https://www.linkedin.com/in/phongnguyendev/"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-linkedin-box-line"></i>
+              </a>
 
-        <!--=============== SCROLLREVEAL ===============-->
-        <script src="js\scrollreveal.min.js"></script>
+              <a
+                href="https://www.facebook.com/gnohpgn/"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-facebook-circle-line"></i>
+              </a>
+            </ul>
+          </div>
 
-        <!--=============== SWIPER JS ===============-->
-        <script src="js\swiper-bundle.min.js"></script>        
-        <!--=============== EMAIL JS ===============-->
-        <script
-        type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-        </script>
+          <!--==================== HOME INFO 1 ====================-->
+          <div class="home__info">
+            <div>
+              <h3 class="home__info-title">BIOGRAPHY</h3>
 
-        <!--=============== MAIN JS ===============-->
-        <script src="js\main.js"></script>
-    </body>
+              <p class="home__info-description">
+                Hi, I'm Phong, a 4th-year Software Engineering student.
+                Enthusiastic about Frontend Development, with strong skills in
+                HTML/CSS, JavaScript, and modern frameworks.
+              </p>
+            </div>
+            <div>
+              <h3 class="home__info-title">CONTACT</h3>
+
+              <p class="home__info-description">
+                Hồ Chí Minh City, Việt Nam <br />
+                phongnguyenfe@gmail.com <br />
+                +84 388 562 250
+              </p>
+            </div>
+
+            <div>
+              <h3 class="home__info-title">SERVICES</h3>
+
+              <p class="home__info-description">
+                Website Design <br />
+                UI/UX Design
+              </p>
+            </div>
+          </div>
+
+          <!--==================== HOME INFO 2 ====================-->
+          <div class="home__info">
+            <div>
+              <h3 class="home__info-title">YEARS OF EXPERIENCE</h3>
+
+              <p class="home__infor-number">Academic & Personal Projects</p>
+            </div>
+
+            <div>
+              <h3 class="home__info-title">COMPLETED PROJECT</h3>
+
+              <p class="home__infor-number">08+</p>
+            </div>
+
+            <div>
+              <h3 class="home__info-title">UNIVERSITY</h3>
+
+              <p class="home__infor-number">
+                <a
+                  href="https://niie.edu.vn/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Nguyễn Tất Thành University – NTT Institute of International
+                  Education (NIIE)
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SKILLS ====================-->
+      <section class="skills section" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <span class="section__subtitle">Language, technology & skills</span>
+
+        <div class="skills__container container grid section__border">
+          <!-- Ngôn ngữ & Công nghệ -->
+          <div class="skills__content">
+            <h3 class="skills__title">
+              <i class="ri-code-line"></i> Front-end
+            </h3>
+
+            <div class="skills__info">
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="img porfolio\icons8-html-logo.svg" alt="HTML" />
+                </div>
+                <h3 class="skill__name">HTML</h3>
+                <span class="skills__subtitle">Intermediate</span>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="img porfolio\icons8-css-logo.svg" alt="CSS" />
+                </div>
+                <h3 class="skill__name">CSS</h3>
+                <span class="skills__subtitle">Intermediate</span>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img
+                    src="img porfolio\icons8-javascript.svg"
+                    alt="JavaScript"
+                  />
+                </div>
+                <h3 class="skill__name">JavaScript</h3>
+                <span class="skills__subtitle">Intermediate</span>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <!-- no icon available for TypeScript; reuse JS icon or leave blank -->
+                  <img
+                    src="img porfolio\icons8-typescript.svg"
+                    alt="TypeScript"
+                  />
+                </div>
+                <h3 class="skill__name">TypeScript</h3>
+                <span class="skills__subtitle">Intermediate</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Thư viện & Framework -->
+          <div class="skills__content">
+            <h3 class="skills__title">
+              <i class="ri-stack-line"></i> Libraries & frameworks
+            </h3>
+
+            <div class="skills__info">
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img
+                    src="img porfolio\icons8-react.svg"
+                    alt="ReactJS"
+                    class="skill-icon skill-icon--react"
+                  />
+                </div>
+                <h3 class="skill__name">ReactJS</h3>
+                <span class="skills__subtitle">Intermediate</span>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img
+                    src="img porfolio\icons8-nextjs.svg"
+                    alt="Nextjs"
+                    class="skill-icon skill-icon--nextjs"
+                  />
+                </div>
+                <h3 class="skill__name">Next.js</h3>
+                <span class="skills__subtitle">Basic</span>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img
+                    src="img porfolio\icons8-tailwind-css.svg"
+                    alt="Tailwind CSS"
+                  />
+                </div>
+                <h3 class="skill__name">Tailwind CSS</h3>
+                <span class="skills__subtitle">Basic</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- back end -->
+          <div class="skills__content">
+            <h3 class="skills__title">
+              <i class="ri-settings-3-line"></i> Back-end
+            </h3>
+
+            <div class="skills__info">
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="img porfolio\icons8-c.svg" alt="C#" />
+                </div>
+                <h3 class="skill__name">C#</h3>
+                <span class="skills__subtitle">Basic</span>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img
+                    src="img porfolio\icons8-.net-framework.svg"
+                    alt="ASP.NET Core"
+                  />
+                </div>
+                <h3 class="skill__name">ASP.NET Core</h3>
+                <span class="skills__subtitle">Basic</span>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img
+                    src="img porfolio\rest-api-icon.svg"
+                    alt="RESTful API"
+                    class="skill-icon skill-icon--restapi"
+                  />
+                </div>
+                <h3 class="skill__name">RESTful API</h3>
+                <span class="skills__subtitle">Basic</span>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img
+                    src="img porfolio\icons8-sql-server.svg"
+                    alt="SQL Server"
+                  />
+                </div>
+                <h3 class="skill__name">SQL Server</h3>
+                <span class="skills__subtitle">Basic</span>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="img porfolio\icons8-nodejs.svg" alt="Nodejs" />
+                </div>
+                <h3 class="skill__name">Node.js</h3>
+                <span class="skills__subtitle">Basic</span>
+              </div>
+            </div>
+          </div>
+          <!-- Quản lý mã nguồn -->
+          <div class="skills__content">
+            <h3 class="skills__title">
+              <i class="ri-git-merge-line"></i> Version Control
+            </h3>
+
+            <div class="skills__info">
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="img porfolio\icons8-git.svg" alt="Git" />
+                </div>
+                <h3 class="skill__name">Git</h3>
+                <span class="skills__subtitle">Intermediate</span>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img
+                    src="img porfolio\icons8-github.svg"
+                    alt="GitHub"
+                    class="skill-icon skill-icon--github"
+                  />
+                </div>
+                <h3 class="skill__name">GitHub</h3>
+                <span class="skills__subtitle">Intermediate</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== QUALIFICATION ====================-->
+      <section class="qualification section" id="qualification">
+        <h2 class="section__title">Qualification</h2>
+        <span class="section__subtitle">Experience & education</span>
+
+        <div class="qualification__container container grid section__border">
+          <!--==================== QUALIFICATION 1 ====================-->
+          <div class="qualification__content">
+            <h3 class="qualification__title">
+              <i class="ri-pencil-line"></i> Education
+            </h3>
+
+            <div class="qualification__info">
+              <div>
+                <h3 class="qualification__name">
+                  Engineer’s Degree in Information Technology,<br />
+                  Software Engineering
+                </h3>
+                <span class="qualification__place"
+                  >Nguyễn Tất Thành University – NTT Institute of International
+                  Education</span
+                >
+                <span class="qualification__year"> 2022 - 2026 </span>
+              </div>
+            </div>
+          </div>
+          <!--==================== QUALIFICATION 2 ====================-->
+          <div class="qualification__content">
+            <h3 class="qualification__title">
+              <i class="ri-building-line"></i> Work
+            </h3>
+
+            <div class="qualification__info">
+              <div>
+                <h3 class="qualification__name"></h3>
+                <span class="qualification__place"> </span>
+                <span class="qualification__year"> </span>
+              </div>
+
+              <div>
+                <h3 class="qualification__name"></h3>
+                <span class="qualification__place"> </span>
+                <span class="qualification__year"> </span>
+              </div>
+            </div>
+          </div>
+          <!--==================== CERTIFICATIONS ====================-->
+          <div class="qualification__content">
+            <h3 class="qualification__title">
+              <i class="ri-award-line"></i> Certifications
+            </h3>
+
+            <div class="qualification__info">
+              <div class="certs__list">
+                <div class="cert-card">
+                  <a
+                    href="img porfolio/Microsoft Office Specialist  Associate Office 2019.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="cert-link"
+                    title="MOS Word, Excel, PowerPoint"
+                    data-type="pdf"
+                    data-src="img porfolio/Microsoft Office Specialist  Associate Office 2019.pdf"
+                    data-open="tab"
+                  >
+                    <img
+                      src="img porfolio/mos-cer.png"
+                      alt="MOS WEP badge"
+                      class="cert-card__img"
+                    />
+                  </a>
+
+                  <div class="cert-card__info">
+                    <h3 class="cert-card__title">
+                      Microsoft Office Specialist Associate Office 2019
+                    </h3>
+                    <span class="cert-card__meta">Microsoft — 2025</span>
+                    <a
+                      href="img porfolio/Microsoft Office Specialist  Associate Office 2019.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >View MOS PDF</a
+                    >
+                  </div>
+                </div>
+
+                <div class="cert-card">
+                  <a
+                    href="img porfolio/niie-eng-cer.jpg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="cert-link"
+                    title="Certificate of Achievement – NIIE English Program"
+                    data-type="image"
+                    data-src="img porfolio/niie-eng-cer.jpg"
+                  >
+                    <img
+                      src="img porfolio/niie-eng-cer.jpg"
+                      alt="NIIE English Program certificate"
+                      class="cert-card__img"
+                    />
+                  </a>
+
+                  <div class="cert-card__info">
+                    <h3 class="cert-card__title">
+                      Certificate of Achievement – NIIE English Program
+                    </h3>
+                    <span class="cert-card__meta"
+                      >Nguyen Tat Thanh University <br />
+                      NTT Institute of International Education<br />Issued Jan
+                      2024</span
+                    >
+                  </div>
+                </div>
+
+                <div class="cert-card">
+                  <a
+                    href="img porfolio/gemini_educator.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="cert-link"
+                    title="Gemini Certified Educator (PDF)"
+                    data-type="pdf"
+                    data-src="img porfolio/gemini_educator.pdf"
+                    data-open="tab"
+                  >
+                    <img
+                      src="img porfolio/gemini_educator.png"
+                      alt="Gemini Certified Educator badge"
+                      class="cert-card__img"
+                    />
+                  </a>
+
+                  <div class="cert-card__info">
+                    <h3 class="cert-card__title">Gemini Certified Educator</h3>
+                    <span class="cert-card__meta"
+                      >Google — Issued Dec 2025<br />Expires Dec 2028</span
+                    >
+                    <a
+                      href="img porfolio/gemini_educator.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >View Educator PDF</a
+                    >
+                  </div>
+                </div>
+
+                <div class="cert-card">
+                  <a
+                    href="img porfolio/gemini_student.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="cert-link"
+                    title="Gemini Certified University Student (PDF)"
+                    data-type="pdf"
+                    data-src="img porfolio/gemini_student.pdf"
+                    data-open="tab"
+                  >
+                    <img
+                      src="img porfolio/gemini_student.png"
+                      alt="Gemini Certified University Student badge"
+                      class="cert-card__img"
+                    />
+                  </a>
+
+                  <div class="cert-card__info">
+                    <h3 class="cert-card__title">
+                      Gemini Certified University Student
+                    </h3>
+                    <span class="cert-card__meta"
+                      >Google — Issued Dec 2025<br />Expires Dec 2028</span
+                    >
+                    <a
+                      href="img porfolio/gemini_student.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >View Student PDF</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="img porfolio\shape-circle.svg"
+          alt="qualification image"
+          class="qualification__img"
+        />
+      </section>
+
+      <!--==================== SERVICES ====================-->
+      <section class="services section" id="services">
+        <h2 class="section__title">Services</h2>
+        <span class="section__subtitle">What i offer</span>
+
+        <div class="services__container container grid section__border">
+          <div class="services__card">
+            <i class="ri-layout-4-line"></i>
+
+            <h2 class="services__title">
+              UI/UX <br />
+              Designer
+            </h2>
+
+            <p class="services__description">
+              Service that provides the best quality and according to customer
+              requirements, with professional work and customer support
+            </p>
+
+            <div class="services__border"></div>
+          </div>
+
+          <div class="services__card">
+            <i class="ri-code-fill"></i>
+
+            <h2 class="services__title">
+              Website <br />
+              Design
+            </h2>
+
+            <p class="services__description">
+              Service that provides the best quality and according to customer
+              requirements, with professional work and customer support
+            </p>
+
+            <div class="services__border"></div>
+          </div>
+
+          <div class="services__card">
+            <i class="ri-quill-pen-line"></i>
+
+            <h2 class="services__title">
+              Digital <br />
+              Animator
+            </h2>
+
+            <p class="services__description">
+              Service that provides the best quality and according to customer
+              requirements, with professional work and customer support
+            </p>
+
+            <div class="services__border"></div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== PROJECTS ====================-->
+      <section class="projects section" id="projects">
+        <h2 class="section__title">Projects</h2>
+        <span class="section__subtitle">Most recent work</span>
+
+        <div class="container section__border">
+          <div class="projects__container swiper">
+            <div class="swiper-wrapper">
+              <!--==================== PROJECTS 1 ====================-->
+              <div class="projects__content swiper-slide">
+                <img
+                  src="img porfolio\project_1.png"
+                  alt="projects image"
+                  class="projects__img"
+                />
+
+                <div>
+                  <span class="projects__subtitle">Landing Page Design</span>
+                  <h1 class="projects__title">Việt Nam Travel</h1>
+
+                  <a
+                    href="https://dulichvietnam-phongnguyen-vn.netlify.app"
+                    class="projects__button"
+                  >
+                    View demo <i class="ri-arrow-right-circle-line"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!--==================== PROJECTS 2 ====================-->
+              <div class="projects__content swiper-slide">
+                <img
+                  src="img porfolio\project_2.png"
+                  alt="projects image"
+                  class="projects__img"
+                />
+
+                <div>
+                  <span class="projects__subtitle">Landing Page Design</span>
+                  <h1 class="projects__title">Doritos</h1>
+
+                  <a
+                    href="https://phongnguyenkobe.github.io/Doritos-Chips-PhongNguyen/"
+                    class="projects__button"
+                  >
+                    View demo <i class="ri-arrow-right-circle-line"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!--==================== PROJECTS 3 ====================-->
+              <div class="projects__content swiper-slide">
+                <img
+                  src="img porfolio\project_3.png"
+                  alt="projects image"
+                  class="projects__img"
+                />
+
+                <div>
+                  <span class="projects__subtitle">Demo Website Front-end</span>
+                  <h1 class="projects__title">PNH Education</h1>
+
+                  <a
+                    href="https://pnh-education-phongnguyen.netlify.app/"
+                    class="projects__button"
+                  >
+                    View demo <i class="ri-arrow-right-circle-line"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!--==================== PROJECTS 4 ====================-->
+              <div class="projects__content swiper-slide">
+                <img
+                  src="img porfolio\car.png"
+                  alt="projects image"
+                  class="projects__img"
+                />
+
+                <div>
+                  <span class="projects__subtitle">Landing Page Design</span>
+                  <h1 class="projects__title">PhongCar</h1>
+
+                  <a
+                    href="https://responsive-car-website-phong-car.vercel.app/"
+                    class="projects__button"
+                  >
+                    View demo <i class="ri-arrow-right-circle-line"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!--==================== PROJECTS 5 ====================-->
+              <div class="projects__content swiper-slide">
+                <img
+                  src="img porfolio\movie.png"
+                  alt="projects image"
+                  class="projects__img"
+                />
+
+                <div>
+                  <span class="projects__subtitle">Website</span>
+                  <h1 class="projects__title">Movie Dashboard</h1>
+
+                  <a
+                    href="https://phongnguyen-movie.netlify.app/"
+                    class="projects__button"
+                  >
+                    View demo <i class="ri-arrow-right-circle-line"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!--==================== PROJECTS 6 ====================-->
+              <div class="projects__content swiper-slide">
+                <img
+                  src="img porfolio\phongship.png"
+                  alt="projects image"
+                  class="projects__img"
+                />
+
+                <div>
+                  <span class="projects__subtitle">Landing Page Design</span>
+                  <h1 class="projects__title">PhongShip-Animation</h1>
+
+                  <a
+                    href="https://phongnguyenkobe.github.io/pirate-animation/"
+                    class="projects__button"
+                  >
+                    View demo <i class="ri-arrow-right-circle-line"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!--==================== PROJECTS 7 ====================-->
+              <div class="projects__content swiper-slide">
+                <img
+                  src="img porfolio\project_7.png"
+                  alt="projects image"
+                  class="projects__img"
+                />
+
+                <div>
+                  <span class="projects__subtitle">Website E-commerce</span>
+                  <h1 class="projects__title">PhongNguyen Puppy</h1>
+
+                  <a
+                    href="https://github.com/PhongNguyenKobe/PhongNguyenPuppyShop-MVC"
+                    class="projects__button"
+                  >
+                    View demo <i class="ri-arrow-right-circle-line"></i>
+                  </a>
+                </div>
+              </div>
+              <!--==================== PROJECTS 8 ====================-->
+              <div class="projects__content swiper-slide">
+                <img
+                  src="img porfolio\project_8.png"
+                  alt="projects image"
+                  class="projects__img"
+                />
+
+                <div>
+                  <span class="projects__subtitle">Website E-commerce</span>
+                  <h1 class="projects__title">PN E-commerce</h1>
+
+                  <a
+                    href="https://pn-ecomclient-ui.vercel.app/"
+                    class="projects__button"
+                  >
+                    View demo <i class="ri-arrow-right-circle-line"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Swiper arrows -->
+            <div class="swiper-button-next">
+              <i class="ri-arrow-right-s-fill"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="ri-arrow-left-s-fill"></i>
+            </div>
+
+            <!-- Swiper pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== TESTIMONIAL ====================-->
+      <section class="testimonial section">
+        <h2 class="section__title">Testimonial</h2>
+        <span class="section__subtitle">My client and partner saying</span>
+
+        <div class="container section__border">
+          <div class="testimonial__container swiper">
+            <div class="swiper-wrapper">
+              <!--==================== TESTIMONIAL 1 ====================-->
+              <div class="testimonial__content swiper-slide">
+                <p class="testimonial__description">
+                  "Working with Phong is to give a good impression, I carry out
+                  my project at a good cost, with excellent quality and
+                  attention. Great service and recommended."
+                </p>
+
+                <div>
+                  <h3 class="testimonial__name">Văn Khánh</h3>
+                  <span class="testimonial__subtitle">Partner</span>
+                </div>
+              </div>
+
+              <!--==================== TESTIMONIAL 2 ====================-->
+              <div class="testimonial__content swiper-slide">
+                <p class="testimonial__description">
+                  "Phong helped me implement the project with excellent quality.
+                  His meticulous attention and excellent service made me very
+                  satisfied. I would definitely recommend him to everyone."
+                </p>
+
+                <div>
+                  <h3 class="testimonial__name">Anh Tuấn</h3>
+                  <span class="testimonial__subtitle">Partner</span>
+                </div>
+              </div>
+
+              <!--==================== TESTIMONIAL 3 ====================-->
+              <div class="testimonial__content swiper-slide">
+                <p class="testimonial__description">
+                  "Phong helped me complete the project effectively. The quality
+                  of his service and meticulous attention is admirable. Well
+                  worth recommending!"
+                </p>
+
+                <div>
+                  <h3 class="testimonial__name">Butler</h3>
+                  <span class="testimonial__subtitle">Client</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Swiper arrows -->
+            <div class="swiper-button-next">
+              <i class="ri-arrow-right-s-fill"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="ri-arrow-left-s-fill"></i>
+            </div>
+          </div>
+        </div>
+
+        <img
+          src="img porfolio\shape-wawes.svg"
+          alt="testimonial image"
+          class="testimonial__img"
+        />
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+        <span class="section__subtitle">Get in touch</span>
+
+        <div class="contact__container container grid section__border">
+          <div class="contact__content">
+            <h3 class="contact__title">
+              <i class="ri-chat-3-line"></i>Talk to me
+            </h3>
+
+            <div class="contact__info">
+              <div class="contact__data">
+                <span class="contact__data-title">Email</span>
+                <span class="contact__data-info">phongnguyenfe@gmail.com</span>
+              </div>
+
+              <div class="contact__data">
+                <span class="contact__data-title">My CV</span>
+                <span class="contact__data-info"
+                  >Phong Nguyen Curriculum Vitae
+                </span>
+
+                <a
+                  href="img porfolio\Nguyễn Đặng Thanh Phong - Kĩ sư phần mềm_CV_topdev.vn.pdf"
+                  download=""
+                  target="_blank"
+                  class="contact__button"
+                >
+                  Download <i class="ri-arrow-down-circle-line"></i>
+                </a>
+              </div>
+
+              <div class="contact__data">
+                <span class="contact__data-title">Zalo</span>
+                <span class="contact__data-info">+84 388562250</span>
+
+                <a
+                  href="https://id.zalo.me/account?continue=https%3A%2F%2Fchat.zalo.me%2F"
+                  target="_blank"
+                  class="contact__button"
+                >
+                  Write me <i class="ri-arrow-right-fill"></i>
+                </a>
+              </div>
+
+              <div class="contact__data">
+                <span class="contact__data-title">Facebook</span>
+                <span class="contact__data-info">Phong Nguyenn </span>
+
+                <a
+                  href="https://www.facebook.com/gnohpgn/"
+                  target="_blank"
+                  class="contact__button"
+                >
+                  Write me <i class="ri-arrow-right-fill"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__content">
+            <h3 class="contact__title">
+              <i class="ri-send-plane-line"></i>Write me your project
+            </h3>
+
+            <form action="" class="contact__form" id="contact-form">
+              <div class="contact__form-div">
+                <label class="contact__form-tag">Names</label>
+                <input
+                  type="text"
+                  name="user_name"
+                  required
+                  placeholder="Write your names"
+                  class="contact__form-input"
+                  id="contact-name"
+                />
+              </div>
+
+              <div class="contact__form-div">
+                <label class="contact__form-tag">Mail</label>
+                <input
+                  type="email"
+                  name="user_email"
+                  required
+                  placeholder="Write your mail"
+                  class="contact__form-input"
+                  id="contact-email"
+                />
+              </div>
+
+              <div class="contact__form-div contact__form-area">
+                <label class="contact__form-tag">Project</label>
+                <textarea
+                  name="user_project"
+                  placeholder="Write your project"
+                  id="contact-project"
+                  class="contact__form-input"
+                ></textarea>
+              </div>
+
+              <p class="contact__message" id="contact-message"></p>
+
+              <button type="submit" class="contact__button">
+                Submit <i class="ri-arrow-right-up-fill"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer__container container">
+        <h1 class="footer__title">Phong</h1>
+        <p>Web Developer</p>
+
+        <ul class="footer__list">
+          <li>
+            <a href="#home" class="footer__link">Home</a>
+          </li>
+
+          <li>
+            <a href="#skills" class="footer__link">Skills</a>
+          </li>
+
+          <li>
+            <a href="#projects" class="footer__link">Projects</a>
+          </li>
+        </ul>
+
+        <ul class="footer__social">
+          <a
+            href="https://github.com/PhongNguyen1210"
+            target="_blank"
+            class="footer__social-link"
+          >
+            <i class="ri-github-fill"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/phong-thanh-787913316/"
+            target="_blank"
+            class="footer__social-link"
+          >
+            <i class="ri-linkedin-box-line"></i>
+          </a>
+
+          <a
+            href="https://www.facebook.com/gnohpgn/"
+            target="_blank"
+            class="footer__social-link"
+          >
+            <i class="ri-facebook-circle-line"></i>
+          </a>
+        </ul>
+
+        <span class="footer__copy">
+          &#169; Copyright PhongNguyen. All rights reserved
+        </span>
+      </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="js\scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="js\swiper-bundle.min.js"></script>
+    <!--=============== EMAIL JS ===============-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="js\main.js"></script>
+  </body>
 </html>
