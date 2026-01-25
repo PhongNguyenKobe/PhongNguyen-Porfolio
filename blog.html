@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="img%20porfolio/favicon.png"
+      type="image/x-icon"
+    />
+    <!--=============== REMIXICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/blog.css" />
+    <title>Phong Nguyen | Blog & Resources</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="index.html#home" class="nav__logo" data-i18n="nav.logo"> Phong Nguyen </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="index.html#home" class="nav__link" data-i18n="nav.home">
+                <i class="ri-home-3-line"></i> Home
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="index.html#skills" class="nav__link" data-i18n="nav.skills">
+                <i class="ri-trophy-line"></i> Skills
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="index.html#qualification" class="nav__link" data-i18n="nav.qualification">
+                <i class="ri-book-3-line"></i> Qualification
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="index.html#services" class="nav__link" data-i18n="nav.services">
+                <i class="ri-briefcase-5-line"></i> Services
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="index.html#projects" class="nav__link" data-i18n="nav.projects">
+                <i class="ri-image-line"></i> Projects
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="index.html#contact" class="nav__link" data-i18n="nav.contact">
+                <i class="ri-chat-3-line"></i> Contact
+              </a>
+            </li>
+            
+            <li class="nav__item">
+              <a href="#blog" class="nav__link active-link" data-i18n="nav.blog">
+                <i class="ri-bookmark-line"></i> Blog
+              </a>
+            </li>
+          </ul>
+          <!--Close button-->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-fill"></i>
+          </div>
+        </div>
+
+        <div class="nav__buttons">
+          <div class="lang-toggle" id="lang-toggle" aria-label="Language switch">
+            <button class="lang-toggle__btn is-active" data-lang="en">EN</button>
+            <button class="lang-toggle__btn" data-lang="vi">VI</button>
+          </div>
+          <!--Theme change button-->
+          <i class="ri-moon-clear-line change-theme" id="theme-button"></i>
+
+          <!--Toggle button-->
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-4-line"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!--==================== BLOG HERO ====================-->
+      <section class="home section blog-hero" id="blog">
+        <div class="container section__border">
+          <div class="blog-hero__content">
+            <h1 class="home__title" data-i18n="blog.heroTitle">
+              Blog & Resources <br />
+              Những thứ mình đang học và lưu lại
+            </h1>
+            <p class="home__info-description" data-i18n="blog.heroDesc">
+              Ghi chú ngắn, link nguồn uy tín, và checklist mình dùng để tự học.
+              Trang này cập nhật dần khi có bài mới hoặc tài nguyên hay.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== BLOG LIST ====================-->
+      <section class="blog section" id="resources">
+        <h2 class="section__title" data-i18n="blog.latestTitle">Latest Notes</h2>
+        <span class="section__subtitle" data-i18n="blog.latestSubtitle">Nguồn đáng tin cậy mình đang theo dõi</span>
+
+        <div class="blog__container container grid section__border">
+          <article class="blog__card">
+            <div class="blog__meta" data-i18n="blog.card1Tag">Performance</div>
+            <h3 class="blog__title" data-i18n="blog.card1Title">Frontend Performance Checklist</h3>
+            <p class="blog__desc" data-i18n="blog.card1Desc">
+              Tối ưu ảnh, bundle, Core Web Vitals, tool mình dùng: Lighthouse,
+              WebPageTest, Squoosh.
+            </p>
+            <div class="blog__links">
+              <a href="https://web.dev/fast/" target="_blank" class="blog__link">web.dev/fast</a>
+              <a href="https://github.com/GoogleChrome/lighthouse" target="_blank" class="blog__link">Lighthouse</a>
+            </div>
+          </article>
+
+          <article class="blog__card">
+            <div class="blog__meta" data-i18n="blog.card2Tag">UI systems</div>
+            <h3 class="blog__title" data-i18n="blog.card2Title">Design Token Starter</h3>
+            <p class="blog__desc" data-i18n="blog.card2Desc">
+              Cách mình tổ chức màu, spacing, typography và đưa vào React/TS với
+              Style Dictionary + Storybook.
+            </p>
+            <div class="blog__links">
+              <a href="https://css-tricks.com/what-are-design-tokens/" target="_blank" class="blog__link">Design tokens intro</a>
+              <a href="https://storybook.js.org/docs" target="_blank" class="blog__link">Storybook docs</a>
+            </div>
+          </article>
+
+          <article class="blog__card">
+            <div class="blog__meta" data-i18n="blog.card3Tag">Career</div>
+            <h3 class="blog__title" data-i18n="blog.card3Title">Lộ trình học FE cho sinh viên</h3>
+            <p class="blog__desc" data-i18n="blog.card3Desc">
+              Lịch học/ôn: HTML/CSS chuẩn, JS/TS căn bản, React fundamentals,
+              luyện qua mini projects.
+            </p>
+            <div class="blog__links">
+              <a href="https://roadmap.sh/frontend" target="_blank" class="blog__link">roadmap.sh/frontend</a>
+              <a href="https://javascript.info/" target="_blank" class="blog__link">javascript.info</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!--==================== AI TOOLS COMPARISON ====================-->
+      <section class="blog section" id="ai-tools">
+        <h2 class="section__title" data-i18n="blog.aiTitle">AI Tools Comparison</h2>
+        <span class="section__subtitle" data-i18n="blog.aiSubtitle">So sánh các công cụ AI phổ biến hiện nay</span>
+
+        <div class="container section__border">
+          <!-- Code Assistance Tools -->
+          <div class="ai-category">
+            <h3 class="ai-category__title">
+              <i class="ri-code-line"></i> Code Assistance
+            </h3>
+            <div class="ai-table__wrapper">
+              <table class="ai-table">
+                <thead>
+                  <tr>
+                    <th>Công cụ</th>
+                    <th>Điểm mạnh</th>
+                    <th>Ngôn ngữ hỗ trợ</th>
+                    <th>Hình thức</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>GitHub Copilot</strong></td>
+                    <td>Gợi ý code trực tiếp trong IDE</td>
+                    <td>Hầu hết ngôn ngữ phổ biến (JS, Python, Java, C#, ...)</td>
+                    <td>Extension tích hợp VS Code, IntelliJ</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Tabnine</strong></td>
+                    <td>Autocomplete code, học từ codebase riêng</td>
+                    <td>Nhiều ngôn ngữ, tối ưu cho JS, Python, Java</td>
+                    <td>Plugin IDE</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Amazon CodeWhisperer</strong></td>
+                    <td>Gợi ý code, tích hợp AWS</td>
+                    <td>Nhiều ngôn ngữ</td>
+                    <td>Plugin IDE, AWS Cloud</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Replit Ghostwriter</strong></td>
+                    <td>Hỗ trợ code trực tiếp trên Replit</td>
+                    <td>JS, Python, Java, ...</td>
+                    <td>Tích hợp Replit IDE</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Cursor</strong></td>
+                    <td>AI code editor full IDE, xây dựng trên VS Code</td>
+                    <td>Hầu hết ngôn ngữ phổ biến</td>
+                    <td>Standalone IDE</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Codeium</strong></td>
+                    <td>Autocomplete AI, free tier tốt</td>
+                    <td>Nhiều ngôn ngữ (JS, Python, Java, Go, ...)</td>
+                    <td>Plugin IDE, Web</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Chat & General AI -->
+          <div class="ai-category">
+            <h3 class="ai-category__title">
+              <i class="ri-chat-3-line"></i> Chat & General Purpose
+            </h3>
+            <div class="ai-table__wrapper">
+              <table class="ai-table">
+                <thead>
+                  <tr>
+                    <th>Công cụ</th>
+                    <th>Điểm mạnh</th>
+                    <th>Ngôn ngữ hỗ trợ</th>
+                    <th>Hình thức</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>ChatGPT</strong></td>
+                    <td>Viết code, giải thích, debug, học thuật toán</td>
+                    <td>Đa ngôn ngữ</td>
+                    <td>Web/App</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Claude Code (Anthropic)</strong></td>
+                    <td>Xử lý code dài, refactor, viết tài liệu</td>
+                    <td>Đa ngôn ngữ</td>
+                    <td>Web/App</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Gemini (Google)</strong></td>
+                    <td>Chatbot đa năng, hỗ trợ code, phân tích dữ liệu</td>
+                    <td>Đa ngôn ngữ</td>
+                    <td>Web/App, tích hợp Google Cloud</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Microsoft Copilot</strong></td>
+                    <td>Code, viết tài liệu, tạo ảnh, tích hợp Office</td>
+                    <td>Đa ngôn ngữ</td>
+                    <td>Tích hợp Office, Edge, Windows</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Perplexity AI</strong></td>
+                    <td>Chatbot tìm kiếm thông tin, có nguồn</td>
+                    <td>Đa ngôn ngữ</td>
+                    <td>Web/App</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Mistral AI</strong></td>
+                    <td>Chatbot mạnh, tối ưu cho châu Âu, open-source models</td>
+                    <td>Đa ngôn ngữ</td>
+                    <td>Web/App, API, Open-source</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Image Generation -->
+          <div class="ai-category">
+            <h3 class="ai-category__title">
+              <i class="ri-image-add-line"></i> Image Generation
+            </h3>
+            <div class="ai-table__wrapper">
+              <table class="ai-table">
+                <thead>
+                  <tr>
+                    <th>Công cụ</th>
+                    <th>Điểm mạnh</th>
+                    <th>Ngôn ngữ hỗ trợ</th>
+                    <th>Hình thức</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>DALL·E (OpenAI)</strong></td>
+                    <td>Sinh ảnh từ mô tả text</td>
+                    <td>Không áp dụng (tạo ảnh)</td>
+                    <td>Web/App</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Stable Diffusion</strong></td>
+                    <td>Tạo ảnh nghệ thuật, open-source</td>
+                    <td>Không áp dụng</td>
+                    <td>Local app, Web</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Midjourney</strong></td>
+                    <td>Tạo ảnh phong cách nghệ thuật</td>
+                    <td>Không áp dụng</td>
+                    <td>Discord bot</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Canva AI</strong></td>
+                    <td>Thiết kế nhanh, sinh ảnh</td>
+                    <td>Không áp dụng</td>
+                    <td>Web/App</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Adobe Firefly</strong></td>
+                    <td>AI tạo ảnh, chỉnh sửa</td>
+                    <td>Không áp dụng</td>
+                    <td>Tích hợp Photoshop/Illustrator</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Leonardo AI</strong></td>
+                    <td>Tạo ảnh đẹp, training custom models</td>
+                    <td>Không áp dụng</td>
+                    <td>Web/App, API</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Automation & Workflow -->
+          <div class="ai-category">
+            <h3 class="ai-category__title">
+              <i class="ri-flow-chart-line"></i> Automation & Workflow
+            </h3>
+            <div class="ai-table__wrapper">
+              <table class="ai-table">
+                <thead>
+                  <tr>
+                    <th>Công cụ</th>
+                    <th>Điểm mạnh</th>
+                    <th>Ngôn ngữ hỗ trợ</th>
+                    <th>Hình thức</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>n8n</strong></td>
+                    <td>Workflow automation, AI agent</td>
+                    <td>Không áp dụng</td>
+                    <td>Self-hosted, Web</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Zapier AI</strong></td>
+                    <td>Tự động hóa công việc, kết nối nhiều app</td>
+                    <td>Không áp dụng</td>
+                    <td>Web/App</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Make (Integromat)</strong></td>
+                    <td>Xây dựng quy trình tự động, có AI module</td>
+                    <td>Không áp dụng</td>
+                    <td>Web/App</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Frameworks & Development -->
+          <div class="ai-category">
+            <h3 class="ai-category__title">
+              <i class="ri-layout-grid-line"></i> Frameworks & Development
+            </h3>
+            <div class="ai-table__wrapper">
+              <table class="ai-table">
+                <thead>
+                  <tr>
+                    <th>Công cụ</th>
+                    <th>Điểm mạnh</th>
+                    <th>Ngôn ngữ hỗ trợ</th>
+                    <th>Hình thức</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>LangChain</strong></td>
+                    <td>Framework xây dựng ứng dụng AI</td>
+                    <td>Python, JS</td>
+                    <td>Library/framework</td>
+                  </tr>
+                  <tr>
+                    <td><strong>AutoGPT / AgentGPT</strong></td>
+                    <td>AI agent tự động thực hiện task phức tạp</td>
+                    <td>Đa ngôn ngữ (qua LLM)</td>
+                    <td>Web/App</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Hugging Face Spaces</strong></td>
+                    <td>Nhiều model AI (text, code, image)</td>
+                    <td>Đa ngôn ngữ</td>
+                    <td>Web/Open-source</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Dify</strong></td>
+                    <td>Low-code AI app builder, workflow visual</td>
+                    <td>Đa ngôn ngữ (qua LLM)</td>
+                    <td>Self-hosted, Web, Open-source</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== YOUTUBE CHANNELS ====================-->
+      <section class="blog section" id="youtube-channels">
+        <h2 class="section__title" data-i18n="blog.youtubeTitle">YouTube Channels</h2>
+        <span class="section__subtitle" data-i18n="blog.youtubeSubtitle">Kênh học lập trình hay từ Việt Nam và quốc tế</span>
+
+        <div class="container section__border">
+          <!-- Vietnamese Channels -->
+          <div class="youtube-category">
+            <h3 class="youtube-category__title" data-i18n="blog.youtubeVietnamese">
+              <i class="ri-flag-line"></i> Kênh tiếng Việt
+            </h3>
+            <div class="youtube__grid">
+              <div class="youtube__card">
+                <h4 class="youtube__name">PD Thiên – Tối ưu Frontend</h4>
+                <p class="youtube__desc">
+                  Chuyên sâu về tối ưu hóa, performance, best practices Frontend.
+                </p>
+                <a href="https://youtube.com/@pdthien" target="_blank" class="youtube__link">
+                  <i class="ri-youtube-line"></i> Xem kênh
+                </a>
+              </div>
+
+              <div class="youtube__card">
+                <h4 class="youtube__name">HIENLTH</h4>
+                <p class="youtube__desc">
+                  ASP.NET Core, Fullstack, Python, SQL, MongoDB.
+                </p>
+                <a href="https://youtube.com/@HIENLTH" target="_blank" class="youtube__link">
+                  <i class="ri-youtube-line"></i> Xem kênh
+                </a>
+              </div>
+
+              <div class="youtube__card">
+                <h4 class="youtube__name">MTikCode</h4>
+                <p class="youtube__desc">
+                  Học Web Fullstack từ lý thuyết nền tảng đến dự án thực tế.
+                </p>
+                <a href="https://youtube.com/@MTikCode" target="_blank" class="youtube__link">
+                  <i class="ri-youtube-line"></i> Xem kênh
+                </a>
+              </div>
+
+              <div class="youtube__card">
+                <h4 class="youtube__name">F8 Official</h4>
+                <p class="youtube__desc">
+                  HTML, CSS, JavaScript, React, Node.js cho người bắt đầu.
+                </p>
+                <a href="https://youtube.com/c/F8VNOfficial" target="_blank" class="youtube__link">
+                  <i class="ri-youtube-line"></i> Xem kênh
+                </a>
+              </div>
+
+              <div class="youtube__card">
+                <h4 class="youtube__name">Kteam (HowKteam)</h4>
+                <p class="youtube__desc">
+                  C#, Python, SQL, Web từ cơ bản đến nâng cao.
+                </p>
+                <a href="https://youtube.com/c/HowKteam" target="_blank" class="youtube__link">
+                  <i class="ri-youtube-line"></i> Xem kênh
+                </a>
+              </div>
+
+              <div class="youtube__card">
+                <h4 class="youtube__name">ZendVN</h4>
+                <p class="youtube__desc">
+                  Học Lập Trình Online: PHP, Laravel, React, Vue.
+                </p>
+                <a href="https://youtube.com/c/ZendVN" target="_blank" class="youtube__link">
+                  <i class="ri-youtube-line"></i> Xem kênh
+                </a>
+              </div>
+
+              <div class="youtube__card">
+                <h4 class="youtube__name">TOIDICODEDAO</h4>
+                <p class="youtube__desc">
+                  Phạm Huy Hoàng - Roadmap web developer, cập nhật công nghệ mới.
+                </p>
+                <a href="https://youtube.com/@toidicodedao" target="_blank" class="youtube__link">
+                  <i class="ri-youtube-line"></i> Xem kênh
+                </a>
+              </div>
+
+              <div class="youtube__card">
+                <h4 class="youtube__name">Hỏi Dân IT</h4>
+                <p class="youtube__desc">
+                  Fullstack với Next.js, Nest.js, Node.js, SQL/MongoDB.
+                </p>
+                <a href="https://youtube.com/@hoidanit" target="_blank" class="youtube__link">
+                  <i class="ri-youtube-line"></i> Xem kênh
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- International Channels -->
+          <div class="youtube-category">
+            <h3 class="youtube-category__title" data-i18n="blog.youtubeInternational">
+              <i class="ri-global-line"></i> Kênh quốc tế
+            </h3>
+            <div class="youtube__grid">
+              <div class="youtube__card">
+                <h4 class="youtube__name">freeCodeCamp.org</h4>
+                <p class="youtube__desc">
+                  Fullstack, React, Node.js, Python, AI - Miễn phí & chất lượng cao.
+                </p>
+                <a href="https://youtube.com/c/Freecodecamp" target="_blank" class="youtube__link">
+                  <i class="ri-youtube-line"></i> Xem kênh
+                </a>
+              </div>
+
+              <div class="youtube__card">
+                <h4 class="youtube__name">JavaScript Mastery</h4>
+                <p class="youtube__desc">
+                  React, Next.js, Node.js, MongoDB - Project-based learning.
+                </p>
+                <a href="https://youtube.com/c/JavaScriptMastery" target="_blank" class="youtube__link">
+                  <i class="ri-youtube-line"></i> Xem kênh
+                </a>
+              </div>
+
+              <div class="youtube__card">
+                <h4 class="youtube__name">PedroTech</h4>
+                <p class="youtube__desc">
+                  ReactJS, NodeJS, Express, MySQL - Dễ hiểu & dễ theo.
+                </p>
+                <a href="https://youtube.com/c/PedroTechnologies" target="_blank" class="youtube__link">
+                  <i class="ri-youtube-line"></i> Xem kênh
+                </a>
+              </div>
+
+              <div class="youtube__card">
+                <h4 class="youtube__name">Daniel Truong Dev</h4>
+                <p class="youtube__desc">
+                  Next.js, TailwindCSS, TypeScript, Fullstack AI.
+                </p>
+                <a href="https://youtube.com/@DanielTruongDev" target="_blank" class="youtube__link">
+                  <i class="ri-youtube-line"></i> Xem kênh
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer__container container">
+        <h1 class="footer__title">Phong</h1>
+        <p data-i18n="footer.role">Web Developer</p>
+
+        <ul class="footer__list">
+          <li><a href="index.html#home" class="footer__link" data-i18n="nav.home">Home</a></li>
+          <li><a href="index.html#projects" class="footer__link" data-i18n="nav.projects">Projects</a></li>
+          <li><a href="#blog" class="footer__link" data-i18n="nav.blog">Blog</a></li>
+        </ul>
+
+        <ul class="footer__social">
+          <a href="https://github.com/PhongNguyenKobe" target="_blank" class="footer__social-link">
+            <i class="ri-github-fill"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/phongnguyendev/" target="_blank" class="footer__social-link">
+            <i class="ri-linkedin-box-line"></i>
+          </a>
+          <a href="https://www.facebook.com/gnohpgn/" target="_blank" class="footer__social-link">
+            <i class="ri-facebook-circle-line"></i>
+          </a>
+        </ul>
+
+        <span class="footer__copy">
+          &#169; Copyright PhongNguyen. All rights reserved
+        </span>
+      </div>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="js/scrollreveal.min.js"></script>
+    <!--=============== SWIPER JS ===============-->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!--=============== EMAIL JS ===============-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <!--=============== MAIN JS ===============-->
+    <script src="js/main.js"></script>
+  </body>
+</html>
