@@ -16,13 +16,6 @@ Thiết kế trang web cá nhân đáp ứng sử dụng HTML, CSS & JavaScript
 
 ---
 
-### 💻 Demo
-
-<img width="1891" height="918" alt="image" src="https://github.com/user-attachments/assets/a2df6785-9db0-4d13-b685-0e527755ba6f" />
-
-https://phongnguyenkobe.github.io/PhongNguyen-Porfolio/
----
-
 ### 📚 Công nghệ sử dụng
 - HTML
 - CSS
